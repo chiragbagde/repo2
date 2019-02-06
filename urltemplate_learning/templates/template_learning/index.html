@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends "template_learning/base.html" %}
+  {% block body_block %}
+   <h1>Welcome to the index page</h1>
+   <h2>This is an example of template teagging.</h2>
+   <h2>{{ text|cut:'required' }}</h2>
+   <h2> {{ time|add:'Just proceed and focus.' }}</h2>
+   <p></p>
+   <p>{{ motivate }}</p>
+   {% endblock %}
